@@ -1,4 +1,4 @@
-# tdd-iOS-calculator-react
+# basic-ios-react-calculator-app-with-test-cases
 
 iOS Calculator APP developed using TDD approach and react
 
