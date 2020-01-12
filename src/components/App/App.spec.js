@@ -2,7 +2,6 @@ import React from "react";
 import { shallow } from "enzyme";
 import App from "./App";
 import Calculator from "../Calculator/Calculator";
-import { isTSAnyKeyword } from "@babel/types";
 
 describe("App", () => {
   let wrapper;

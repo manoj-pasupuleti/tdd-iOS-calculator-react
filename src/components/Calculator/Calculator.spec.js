@@ -2,9 +2,6 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 
 import Calculator from "./Calculator";
-import Display from "../Display/Display";
-import Keypad from "../Keypad/Keypad";
-import { isTSAnyKeyword } from "@babel/types";
 
 describe("Calculator Rendering", () => {
   let wrapper;
