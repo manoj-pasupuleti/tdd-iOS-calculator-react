@@ -36,11 +36,12 @@ export default class Calculator extends Component {
   };
 
   handleKeyDown = e => {
-    e.preventDefault();
-    e.stopPropagation();
     const { keyPadNumbers, keyPadOperators } = this.state;
     const { key } = e;
-
+    if (key !== "Tab") {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     if (key === "Backspace") this.updateDisplay("ce");
     if (key === "Enter" || key === "=") this.callOperator();
 

@@ -17,7 +17,7 @@ export default function KeyPad({
     keyPadNumbers.map(number => (
       <Key
         handleKeyDown={handleKeyDown}
-        key={`o_${number}`}
+        key={number}
         keyValue={number}
         keyType="number-key"
         keyAction={updateDisplay}
@@ -29,7 +29,7 @@ export default function KeyPad({
     keyPadOperators.map(operator => (
       <Key
         handleKeyDown={handleKeyDown}
-        key={`o_${operator}`}
+        key={operator}
         keyValue={operator}
         keyType="operator-key"
         keyAction={setOperator}

@@ -12,6 +12,8 @@ export default function key({ handleKeyDown, keyAction, keyType, keyValue }) {
       onKeyPress={handleKeyDown}
       role="button"
       tabIndex="0"
+      aria-pressed="false"
+      id={`${keyType}-${keyValue}`}
     >
       <p className="key-value">{keyValue}</p>
     </div>
