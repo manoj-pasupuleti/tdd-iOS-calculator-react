@@ -1,6 +1,6 @@
 # tdd-iOS-calculator-react
 
-iOS Calculator APP developed with TDD approach and by using react
+iOS Calculator APP developed using TDD approach and react
 
 ## Available Scripts
 
