@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Key Should Render Correctly 1`] = `
+<div
+  className="key-container number-key"
+  onClick={[Function]}
+  onKeyPress={[MockFunction]}
+  role="button"
+  tabIndex="0"
+>
+  <p
+    className="key-value"
+  >
+    0
+  </p>
+</div>
+`;

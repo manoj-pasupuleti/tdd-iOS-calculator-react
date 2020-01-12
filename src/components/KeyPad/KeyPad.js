@@ -13,6 +13,7 @@ export default function KeyPad({
   callOperator
 }) {
   const renderNumbers = () =>
+    keyPadNumbers &&
     keyPadNumbers.map(number => (
       <Key
         handleKeyDown={handleKeyDown}
@@ -24,6 +25,7 @@ export default function KeyPad({
     ));
 
   const renderOperators = () =>
+    keyPadOperators &&
     keyPadOperators.map(operator => (
       <Key
         handleKeyDown={handleKeyDown}

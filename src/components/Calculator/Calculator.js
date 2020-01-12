@@ -43,7 +43,7 @@ export default class Calculator extends Component {
     const { key } = e;
 
     if (key === "Backspace") this.updateDisplay("ce");
-    if (key === "Enter" || key === "=") this.callOperator(true);
+    if (key === "Enter" || key === "=") this.callOperator();
 
     if (keyPadNumbers.indexOf(key) > -1) {
       this.updateDisplay(key);
