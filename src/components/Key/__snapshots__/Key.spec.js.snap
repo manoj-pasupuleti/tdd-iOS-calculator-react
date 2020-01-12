@@ -2,7 +2,9 @@
 
 exports[`Key Should Render Correctly 1`] = `
 <div
+  aria-pressed="false"
   className="key-container number-key"
+  id="number-key-0"
   onClick={[Function]}
   onKeyPress={[MockFunction]}
   role="button"

@@ -38,6 +38,7 @@ export default class Calculator extends Component {
   handleKeyDown = e => {
     const { keyPadNumbers, keyPadOperators } = this.state;
     const { key } = e;
+    // to support keyboard navigation using Tab or Shift+Tab
     if (key !== "Tab") {
       e.preventDefault();
       e.stopPropagation();

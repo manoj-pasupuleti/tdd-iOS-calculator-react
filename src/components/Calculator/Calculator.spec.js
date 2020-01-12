@@ -135,6 +135,15 @@ describe("handleKeyDown", () => {
     });
     expect(wrapper.state("displayValue")).toEqual("5");
   });
+  it("updates displayValue to the sum of storedValue and displayValue", () => {
+    wrapper.setState({ displayValue: "2" });
+    wrapper.instance().handleKeyDown({
+      key: "Tab",
+      preventDefault: () => {},
+      stopPropagation: () => {}
+    });
+    expect(wrapper.state("displayValue")).toEqual("2");
+  });
   it("updates displayValue to remove last digit", () => {
     wrapper.setState({ displayValue: "24" });
     wrapper.instance().handleKeyDown({
